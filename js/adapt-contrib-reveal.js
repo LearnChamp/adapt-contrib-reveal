@@ -330,8 +330,12 @@ define(function(require) {
               ? this.model.get('second').body
               : this.model.get('first').body;
 
+            var titleText = this.model.get('_revealed')
+              ? this.model.get('second').title
+              : this.model.get('first').title;
+
             var popupObject = {
-                title: '',
+                title: titleText,
                 body: bodyText
             };
 
