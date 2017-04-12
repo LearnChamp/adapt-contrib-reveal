@@ -16,11 +16,9 @@ define(function(require) {
             return Adapt.device.touch == true ? {
                 'touchstart .reveal-widget-control':  'clickReveal',
                 'click .reveal-widget-control':       'clickReveal',
-                'inview':                             'inview',
                 'touchstart .reveal-popup-open':      'openPopup'
             } : {
                 'click .reveal-widget-control':       'clickReveal',
-                'inview':                             'inview',
                 'click .reveal-popup-open' :          'openPopup'
             }
         },
